@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0; /* zera a marguem de toda a tela */
+  padding: 0; /* zera todo os padding */
+  box-sizing: border-box; /* modelo em caixa para toda a tela */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:focus {
+  outline: 0; /* remove o focu de tudo */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  /* 
+  public/index.html <div id="root"></div> 
+  "height" especifica a altura
+  "width" especifica a largura
+  */
+}
+
+body {
+  font: 14px 'Roboto', sans-serif;
+  background-color: #efefef;
+}
+
+a {
+  text-decoration: none; /* remover o sublinahdo das tags a  */
+}
+
+ul {
+  list-style: none; /* remover a bolinha das tags ul  */
+}
+
+button {
+  cursor: pointer; /* adiconar sempre o curso da mao no button  */
 }
