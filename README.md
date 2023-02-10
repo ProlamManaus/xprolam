@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Contato ✉️
+| <img src="https://avatars.githubusercontent.com/u/121299247?v=4" width=100><br><sub><a href="https://instagram.com/marcellsouza">@Marcell Souza🦊</a></sub> |
+| :---: |
+ 
+<p align="left">
+    <a href="https://www.linkedin.com/in/marcellsouza/">
+        <img alt="Marcell Souza / Linkedin" src="https://img.shields.io/badge/-Marcell Souza-835afd?style=flat&logo=Linkedin&logoColor=fff" />
+    </a>
+    <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSGLCKpKJfwPsKKqzXBplKkGtCLvCQcFWdWxCxQFfkHzzjVkgzrMFPBgKBmWFHvrjrCsMqSH">
+        <img alt="Marcell Souza / Linkedin" src="https://img.shields.io/badge/-Marcell Souza-ff59f8?style=flat&logo=Gmail&logoColor=fff" />
+    </a>
+</p>
+
+
+[![Linkedin Badge](https://img.shields.io/badge/-Marcell%20Ramos%20de%20Souza-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcellsouza/)](https://www.linkedin.com/in/marcellsouza/) 
+</div>
