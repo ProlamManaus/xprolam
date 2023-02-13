@@ -12,6 +12,7 @@ function SignIn() {
 
   function handleSubmit(e) {
     e.preventDefault() // para não atualizar a pagina.
+    console.log(`Email SignIn: [${email}]`)
     // alert("CLICOU");
     if (email !== '' && password !== '') {
       // signIn(email, password);
@@ -28,7 +29,7 @@ function SignIn() {
           <h1>Entrar</h1>
           <input
             type="text"
-            placeholder="email@email.com"
+            placeholder="nome@prolam.com.br"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

@@ -1,6 +1,7 @@
 import { Routes as Switch } from 'react-router-dom'
 // import { Routes , Route } from 'react-router-dom'
 // import { Routes } from 'react-router-dom'
+
 import { Route } from 'react-router-dom'
 // import Route from './Route'
 
@@ -16,14 +17,8 @@ export default function RoutesX() {
       {/* <Route exact path="/" component={SignIn} /> */}
 
       <Route path="/" element={<SignIn />} />
-      <Route
-        path="/Register"
-        element={<SignUp />}
-      />
-      <Route
-        path="/Dashboard"
-        element={<Dashboard />}
-      />
+      <Route path="/Register" element={<SignUp />} />
+      <Route path="/Dashboard" element={<Dashboard />} />
 
       {/* </Route> */}
     </Switch>
