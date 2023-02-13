@@ -1,0 +1,143 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px; /* largura maxima dele */
+  background-color: #181c2e;
+  position: fixed; /* Separa os container */
+  height: 100%; /* pegar toda a vertical (altura) */
+  overflow: auto;
+}
+
+.sidebar div {
+  background: url('../../assets/cover.png');
+  background-color: #181c2e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px; /* Altuar */
+  width: 100%; /* Largura */
+}
+
+.sidebar div {
+  padding-top: 30px; /* desgrudar foto da parte de cima */
+}
+
+.sidebar div img {
+  border-radius: 50%; /* arrendodar o icone da foto */
+  display: block;
+
+  margin: auto; /* para a foto ficar centralizada */
+  width: 90px; /* Tamanho da foto */
+  height: 90px; /* Tamanho da foto */
+
+  -webkit-filter: drop-shadow(2px 3px 6px #121212);
+  filter: drop-shadow(2px 3px 6px #121212);
+  object-fit: cover; /* manter redondo a foto */
+  border: 2px solid #121212;
+}
+
+.sidebar a {
+  /* lista de setores */
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.35em; /* espacamento entre as linhas*/
+  font-size: 1em; /* tamanho das letras do MENU*/
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: ease-in-out 0.3s;
+}
+
+.sidebar a svg {
+  /* margem do icone */
+  margin-right: 0.5em;
+}
+
+.sidebar a:hover {
+  /* background-color: #121212; */
+  background-color: gainsboro;
+  /* color: #fff; */
+  color: #000;
+}
+
+.user_nome {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 3px;
+}
+
+.user_email {
+  color: rgba(255, 255, 255, 0.406);
+  text-align: center;
+  font-size: 10px;
+  /* padding-top: 1px; */
+}
+
+.content {
+  margin-left: 200px;
+  /* cima/baixo  direito/esquerda */
+  padding: 1px 16px;
+}
+
+.logout-btn2 {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 7px 10px 8px 13px;
+  background-color: transparent;
+  border: 1px solid #181c2e;
+  /* border-radius: 5px; */
+  font-size: 1.4em;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: white;
+  width: 100%; 
+  padding: 0.6em;
+}
+
+.logout-btn2:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+.logout-btn1 {
+  margin-right: .8em;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  .sidebar div {
+    display: none;
+  }
+
+  .sidebar a svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+  .sidebar a svg {
+    display: none;
+  }
+}

@@ -1,7 +1,7 @@
 import './dashboard.css'
 import { useState, useEffect, useContext } from 'react'
 import { AuthContext } from '../../contexts/auth'
-// import Header from "../../components/Header";
+import Header from "../../components/Header";
 // import Title from "../../components/Title";
 // import { FiMessageSquare, FiPlus, FiSearch, FiEdit2 } from "react-icons/fi";
 import { Link } from 'react-router-dom'
@@ -23,9 +23,10 @@ export default function Dashboard() {
 
   return (
     <div className="App">
-      <h1>Pagina de Dashboard</h1>
+        <Header />
+      <h1> ---------------------{'>'} Pagina de Dashboard</h1>
       <button onClick={() => signOut()}>
-        Fazer Logout
+        -------------------------------------------------- Fazer Logout
       </button>
     </div>
     // <AuthProvider>
