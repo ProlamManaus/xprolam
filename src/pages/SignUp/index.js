@@ -8,7 +8,6 @@ function SignUp() {
   const [nome, setNome] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-
   const { signUp, loadingAuth } = useContext(AuthContext)
 
   function handleSubmit(e) {
@@ -47,8 +46,7 @@ function SignUp() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">
-            {loadingAuth ? "Carregando..." : "Cadastrar"}
-            Cadastrar
+            {loadingAuth ? 'Carregando...' : 'Cadastrar'}
           </button>
         </form>
         <Link to="/">Já tem uma conta? Entre</Link>

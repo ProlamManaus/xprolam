@@ -22,6 +22,43 @@ function AuthProvider({ children }) {
     loadStorage()
   }, [])
 
+  // Fazendo login do usuario
+  async function signIn(email, password) {
+    setLoadingAuth(true)
+
+    await firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(async (value) => {
+        let uid = value.user.uid
+
+        const userProfile = await firebase
+          .firestore()
+          .collection('users')
+          .doc(uid)
+          .get()
+
+        let data = {
+          uid: uid,
+          nome: userProfile.data().nome,
+          avatarUrl: userProfile.data().avatarUrl,
+          email: value.user.email,
+        }
+
+        setUser(data)
+        storageUser(data)
+        setLoadingAuth(false)
+        // toast.success('Bem vindo de volta! ', user.nome);
+        toast.success('Bem vindo de volta!')
+      })
+      .catch((error) => {
+        console.log(error)
+        toast.error('Ops algo deu errado!')
+        setLoadingAuth(false)
+      })
+  }
+
+  // Cadastrando um novo usuario
   async function signUp(email, password, nome) {
     setLoadingAuth(true)
 
@@ -31,7 +68,7 @@ function AuthProvider({ children }) {
       .then(async (value) => {
         let uid = value.user.uid
 
-        // vamos no banco cadastrar
+        // Vamos no banco cadastrar
         await firebase
           .firestore()
           .collection('users')
@@ -61,12 +98,12 @@ function AuthProvider({ children }) {
       })
   }
 
-  // salvar no localStorage
+  // Salvar no localStorage
   function storageUser(data) {
     localStorage.setItem('SistemaUser', JSON.stringify(data))
   }
 
-  //Logout do usuario
+  // Logout do usuario
   async function signOut() {
     await firebase.auth().signOut()
     localStorage.removeItem('SistemaUser') // limpar o localStorage
@@ -82,8 +119,8 @@ function AuthProvider({ children }) {
         loading,
         signUp,
         signOut,
-        // signIn,
-        // loadingAuth,
+        signIn,
+        loadingAuth,
         // setUser,
         // storageUser,
       }}

@@ -7,10 +7,17 @@ import { Route } from 'react-router-dom'
 
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
-
 import Dashboard from '../pages/Dashboard'
 
+// import { useState } from 'react'
+
 export default function RoutesX() {
+
+  // const [user, setUser] = useState(null)
+  // if (user.nome === '') {
+    // console.log(`Nome: [${user.nome}]`)
+  // }
+
   return (
     <Switch>
       {/* <Route element={<Route />}> */}

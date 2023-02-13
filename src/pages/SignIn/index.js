@@ -2,20 +2,20 @@ import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import './signin.css'
 import logo from '../../assets/logo.png'
-// import { AuthContext } from "../../contexts/auth";
+import { AuthContext } from "../../contexts/auth";
 
 function SignIn() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   // const { signIn } = useContext(AuthContext);
-  // const { signIn, loadingAuth } = useContext(AuthContext)
+  const { signIn, loadingAuth } = useContext(AuthContext)
 
   function handleSubmit(e) {
     e.preventDefault() // para não atualizar a pagina.
     console.log(`Email SignIn: [${email}]`)
     // alert("CLICOU");
     if (email !== '' && password !== '') {
-      // signIn(email, password);
+      signIn(email, password);
     }
   }
 
@@ -40,8 +40,7 @@ function SignIn() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">
-            {/* {loadingAuth ? "Carregando..." : "Acessar"} */}
-            Acessar
+            {loadingAuth ? "Carregando..." : "Acessar"}
           </button>
         </form>
         <Link to="/register">Criar uma conta</Link>

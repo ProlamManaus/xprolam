@@ -11,7 +11,7 @@ import firebase from '../../services/firebaseConnection'
 // import Modal from "../../components/Modal";
 
 export default function Dashboard() {
-  const { sigOut } = useContext(AuthContext)
+  const { signOut } = useContext(AuthContext)
   // const [chamados, setChamados] = useState([])
   // const [loading, setLoading] = useState(true)
   // const [loadingMore, setLoadingMore] = useState(false)
@@ -24,7 +24,7 @@ export default function Dashboard() {
   return (
     <div className="App">
       <h1>Pagina de Dashboard</h1>
-      <button onClick={() => sigOut()}>
+      <button onClick={() => signOut()}>
         Fazer Logout
       </button>
     </div>
