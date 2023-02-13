@@ -1,0 +1,104 @@
+.container-center {
+  height: 100%;
+  /* altura da tela vai ser 100% */
+
+  display: flex;
+  /* para usar as propriedades abaixo */
+
+  justify-content: center;
+  /* blocos alinhados no centro Horizontamente */
+
+  align-items: center;
+  /* blocos alinhados no centro Verticalmente */
+
+  background-color: #121212;
+}
+
+.login {
+  background: #eaeaec;
+  width: 600px;
+  /* largura do bloco */
+
+  display: flex;
+  /* um bloco do lado do outro */
+
+  align-items: center;
+  /* blocos alinhados no centro Verticalmente */
+
+  justify-content: center;
+  /* blocos alinhados no centro Horizontamente */
+
+  flex-direction: column;
+  /* blcos alinhados pela colulna */
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
+  background-color: #181c2e; /* parte azul do logo */
+  width: 100%;
+}
+
+.login-area img {
+  padding: 10px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  /* padding: 25px 35px 25px 35px; */
+  /* width: 170px; */
+
+  width: 560px;
+  /* largura da imgagem */
+
+  height: 150px;
+  /* altura da imagem */
+
+  border-radius: 20px;
+}
+
+form {
+  margin-top: 1.5em;
+
+  width: 90%;
+  /* largura que as tags vam ocupar */
+
+  display: flex;
+  flex-direction: column;
+  /* flex-direction:row */
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: #181c2e;
+}
+
+.login input {
+  margin-bottom: 1.15em;
+  height: 2.6em;
+  /* altura*/
+
+  border: 0;
+  /* 0 remove a borda | 1 mostra a borda */
+
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #FFF;
+}
+
+form button{
+  height: 35px;
+  /* altura*/
+
+  border:0;
+  border-radius: 7px;
+  background-color: #181c2e;
+  color: #FFF;
+  font-size: 1.3em;
+}
+
+.login a{
+  margin: 1.5em 0;
+  color: #000;
+  cursor: pointer;
+}
