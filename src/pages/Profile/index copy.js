@@ -37,7 +37,7 @@ export default function Profile() {
 
   async function handleUpload() {
     const currentUid = user.uid
-
+    // eslint-disable-next-line no-unused-vars
     const uploadTask = await firebase
       .storage()
 

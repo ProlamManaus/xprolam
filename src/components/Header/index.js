@@ -68,6 +68,10 @@ export default function Header() {
       </Link>
       <Link to="/profile">
         <FiUser color="#FFF" size={24} />
+        Portaria
+      </Link>
+      <Link to="/profile">
+        <FiUser color="#FFF" size={24} />
         Rebobinadeira
       </Link>
       <Link to="/profile">
