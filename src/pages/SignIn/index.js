@@ -43,7 +43,8 @@ function SignIn() {
             {loadingAuth ? "Carregando..." : "Acessar"}
           </button>
         </form>
-        <Link to="/register">Criar uma conta</Link>
+        {/* <Link to="/register">Criar uma conta</Link> */}
+        <Link to="/"></Link>
       </div>
     </div>
   )

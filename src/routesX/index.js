@@ -9,6 +9,10 @@ import Dashboard from '../pages/Dashboard'
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
 
+import Profile from '../pages/Profile';
+// import Customers from '../pages/Customers';
+// import New from '../pages/New';
+
 function RouteWrapper({ element: Element, isPrivate, ...rest }) {
   const { signed, loading } = useContext(AuthContext)
 
@@ -35,7 +39,8 @@ export default function RoutesX() {
         <Route path="/Register" element={<SignUp />} />
       </Route>
       <Route element={<RouteWrapper isPrivate />}>
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
       </Route>
     </Switch>
   )

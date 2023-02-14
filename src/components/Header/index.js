@@ -88,7 +88,7 @@ export default function Header() {
       </Link>
       <Link to="/profile">
         <FiSettings color="#FFF" size={24} />
-        Sistema
+        Configurações
       </Link>
 
       <Link onClick={() => signOut()}>
