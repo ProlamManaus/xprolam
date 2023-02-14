@@ -7,6 +7,9 @@ import logo from '../../assets/logo.png'
 function SignUp() {
   const [nome, setNome] = useState('')
   const [email, setEmail] = useState('')
+
+  // const [group, setGroup] = useState('')
+
   const [password, setPassword] = useState('')
   const { signUp, loadingAuth } = useContext(AuthContext)
 
