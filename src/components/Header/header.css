@@ -40,8 +40,8 @@
   /* lista de setores */
   display: block;
   color: rgba(255, 255, 255, 0.7);
-  padding: 0.3em; /* espacamento entre as linhas*/
-  font-size: .9em; /* tamanho das letras do MENU*/
+  padding: 0.2em; /* espacamento entre as linhas*/
+  font-size: .85em; /* tamanho das letras do MENU*/
   text-decoration: none;
   display: flex;
   flex-direction: row;

@@ -5,8 +5,8 @@ import { toast } from 'react-toastify'
 export const AuthContext = createContext({})
 
 function AuthProvider({ children }) {
-  // const [user, setUser] = useState({ id: 1, nome: 'Marcell Souza' });
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState({ id: 1, nome: 'Prolam',email: 'Manaus' });
+  // const [user, setUser] = useState(null)
   const [loadingAuth, setLoadingAuth] = useState(false)
   const [loading, setLoading] = useState(true)
 

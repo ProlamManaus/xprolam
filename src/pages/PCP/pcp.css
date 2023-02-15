@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  background-color: #f8f8f8; /* color a area flex */
+  border-radius: 5px;
+  padding: 0.8em; /* desincosta da margen */
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.label-avatar {
+  width: 280px;
+  height: 280px;
+
+  /* tamanho do label avatar */
+  /* background-color: #6d4d4d22;  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* item abaixo do outro */
+  cursor: pointer;
+}
+
+.label-avatar input {
+  display: none; /* sumir com o input da tela */
+}
+
+.label-avatar span {
+  z-index: 99; /* em cima de todos */
+  position: absolute; /* centraliza a foto */
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.label-avatar span:hover {
+  opacity: 1; /* volta a ficar branco */
+  transform: scale(1.4); /* aumenta o tamanho */
+}
+
+.form-profile img {
+  margin-bottom: 1em;
+  border-radius: 50%; /* deixa redonda a foto */
+  object-fit: cover; /* não deixa distorcer a foto */
+}
+
+.form-profile label {
+  /* label nome/email */
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+
+.form-profile input,
+textarea,
+selct {
+  margin-bottom: 1em; /* magem input */
+  padding: 0.7em; /* espaço interno do input */
+  border: 0; /* tira a borda preta que fica ao redor */
+  border-radius: 5px;
+  max-width: 600px; /* tamanho maximo */
+  background-color: #edeff8;
+}
+
+.form-profile input:disabled {
+  cursor: not-allowed; /* deixa o sinal de proibido no email */
+}
+
+.form-profile button {
+  max-width: 600px; /* tamanho maximo */
+}
+
+.logout-btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  /* border: 1px solid #121212; */
+  border: 1px solid #f44336;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-btn:hover {
+  border: 2px solid #121212;
+  color: #f44336;
+}

@@ -30,63 +30,63 @@ export default function Header() {
         <FiHome color="#FFF" size={24} />
         Home
       </Link>
-      <Link to="/dashboard">
+      <Link to="/expedicao">
         <FiUser color="#FFF" size={24} />
         Expedição
       </Link>
-      <Link to="/customers">
+      <Link to="/fiscal">
         <FiUser color="#FFF" size={24} />
         Fiscal
       </Link>
-      <Link to="/profile">
+      <Link to="/genteGestao">
         <FiUsers color="#FFF" size={24} />
         Gente & Gestão
       </Link>
-      <Link to="/profile">
+      <Link to="/gerencia">
         <FiUser color="#FFF" size={24} />
         Gerência
       </Link>
-      <Link to="/profile">
+      <Link to="/laboratorio">
         <FiUser color="#FFF" size={24} />
         Laboratório
       </Link>
-      <Link to="/profile">
+      <Link to="/manutencao">
         <FiUser color="#FFF" size={24} />
         Manutenção
       </Link>
-      <Link to="/profile">
+      <Link to="/pcp">
         <FiUser color="#FFF" size={24} />
         PCP
       </Link>
-      <Link to="/profile">
+      <Link to="/producao">
         <FiUser color="#FFF" size={24} />
         Produção
       </Link>
-      <Link to="/profile">
+      <Link to="/qualidade">
         <FiUser color="#FFF" size={24} />
         Qualidade
       </Link>
-      <Link to="/profile">
+      <Link to="/portaria">
         <FiUser color="#FFF" size={24} />
         Portaria
       </Link>
-      <Link to="/profile">
+      <Link to="/rebobinadeira">
         <FiUser color="#FFF" size={24} />
         Rebobinadeira
       </Link>
-      <Link to="/profile">
+      <Link to="/refeitorio">
         <FiUser color="#FFF" size={24} />
         Refeitório
       </Link>
-      <Link to="/profile">
+      <Link to="/segTrabalho">
         <FiUser color="#FFF" size={24} />
         Seg. Trabalho
       </Link>
-      <Link to="/profile">
+      <Link to="/sgq">
         <FiUser color="#FFF" size={24} />
         SGQ
       </Link>
-      <Link to="/profile">
+      <Link to="/ti">
         <FiUser color="#FFF" size={24} />
         TI
       </Link>
